@@ -40,7 +40,7 @@ def detect_and_get_price(label: str):
 async def read_root():
  return {"message": "Hello, World!"}
 
-@app.post("/detect/")
+@app.post("/detect")
 async def detect_objects(file: UploadFile):
     try:
         # Read the uploaded file
